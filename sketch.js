@@ -72,5 +72,5 @@ function setImage(loadedImageFile) {
 function draw() {
   background(200);
   imageMode(CENTER);
-  image(gazou,150,150,100,100);
+  image(img,150,150,100,100);
 }
