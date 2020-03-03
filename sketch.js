@@ -3,7 +3,7 @@ var colors = [];
 var sortMode = null;
 
 function preload() {
-  img = loadImage("img/191130002.jpg");
+  img = loadImage('img/191130002.jpg');
   // loadImageのやり方がわからん。img/191130002.jpgから絶対パスhttps://sota14.github.io/palette_from_img/img/191130002.jpgに変更
 }
 
