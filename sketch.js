@@ -3,8 +3,8 @@ var colors = [];
 var sortMode = null;
 
 function preload() {
-  img = loadImage("https://sota14.github.io/palette_from_img/img/191130002.jpg");
-  // loadImageのやり方がわからん。img/191130002.jpgから絶対パスに変更
+  img = loadImage("img/191130002.jpg");
+  // loadImageのやり方がわからん。img/191130002.jpgから絶対パスhttps://sota14.github.io/palette_from_img/img/191130002.jpgに変更
 }
 
 function setup() {
@@ -38,7 +38,7 @@ function draw() {
   gd.sortColors(colors, sortMode);
 
   var i = o;
-  for (var gridX = 0; gridX < tileCount; gridX++) {
+  for (var gridY = 0; gridY < tileCount; gridY++) {
     for (var gridX = 0; gridX < tileCount; gridX++) {
       fill(colors[i]);
       rect(gridX * rectSize, gridY * rectSize, rectSize, rectSize);
