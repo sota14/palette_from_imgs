@@ -48,20 +48,20 @@ function draw() {
 }
 
 function keyReleased() {
-  if (key == "c" || key == "C")
-    writeFile([gd.ase.encode(colors)], gd.timestamp(), "ase");
-  if (key == "s" || key == "S") saveCanvas(gd.timestamp(), "png");
+  if (key == 'c' || key == 'C')
+    writeFile([gd.ase.encode(colors)], gd.timestamp(), 'ase');
+  if (key == 's' || key == 'S') saveCanvas(gd.timestamp(), 'png');
 
-  if (key == "1") loadImage("data/pic1.jpg", setImage);
-  if (key == "2") loadImage("data/pic2.jpg", setImage);
-  if (key == "3") loadImage("data/pic3.jpg", setImage);
-  if (key == "4") loadImage("data/pic4.jpg", setImage);
+  if (key == '1') loadImage('img/191130002.jpg', setImage);
+  if (key == '2') loadImage('img/191130004.jpg', setImage);
+  /* if (key == '3') loadImage('data/pic3.jpg', setImage);
+  if (key == '4') loadImage('data/pic4.jpg', setImage); */
 
-  if (key == "5") sortMode = null;
-  if (key == "6") sortMode = gd.HUE;
-  if (key == "7") sortMode = gd.SATURATION;
-  if (key == "8") sortMode = gd.BRIGHTNESS;
-  if (key == "9") sortMode = gd.GRAYSCALE;
+  if (key == '5') sortMode = null;
+  if (key == '6') sortMode = gd.HUE;
+  if (key == '7') sortMode = gd.SATURATION;
+  if (key == '8') sortMode = gd.BRIGHTNESS;
+  if (key == '9') sortMode = gd.GRAYSCALE;
 }
 
 function setImage(loadedImageFile) {
