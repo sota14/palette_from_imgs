@@ -12,7 +12,7 @@ function setup() {
   noCursor();
   noStroke();
 }
-/*
+
 function draw() {
   var tileCount = floor(width / max(mouseX, 5));
   var rectSize = width / tileCount;
@@ -66,11 +66,4 @@ function keyReleased() {
 
 function setImage(loadedImageFile) {
   img = loadedImageFile;
-}
-*/
-
-function draw() {
-  background(200);
-  imageMode(CENTER);
-  image(img,150,150,100,100);
 }
